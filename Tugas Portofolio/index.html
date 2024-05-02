@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <style>
+    body {
+      font-family: poppins;
+    }
+    .navbar {
+      margin: 10px;
+      background-color: blueviolet;
+      border-radius: 50px;
+    }
+    .home {
+      margin: 60px;
+      padding: 60px;
+      justify-content: center;
+      align-items: center;
+    }
+    .name {
+      color: blueviolet;
+    }
+    .profile {
+      background-color: blueviolet;
+      border-radius: 30px;
+      margin: 20px;
+      width: 300px;
+      height: auto;
+    }
+    @media (max-width: 800px) {
+      .home,
+      .about{
+        flex-direction: column;
+      }
+    }
+    .about, .education{
+      padding: 50px;
+      background-color: blueviolet;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border-radius: 20px;
+    }
+    .experience, .contact{
+      margin: 60px;
+    }
+    .card {
+      border: none;
+      background: none;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top text-center">
+      <div class="container-fluid" id="navbar">
+        <a class="navbar-brand text-white" href="#">Portofolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home d-flex">
+      <div>
+        <h1 class="cardTitle"><strong>Hello I'm</strong></h1>
+        <h1 class="name"><strong>Ivan Muliansyah</strong></h1>
+        <p class="cardText">
+          Kemampuan utama saya adalah dalam desain antarmuka pengguna (UI), dan saya juga memiliki kemampuan sebagai hustler atau manajer proyek.
+        </p>
+      </div>
+      <div>
+        <img
+          src="pictures/DSC_7894-removebg-preview (1).png"
+          class="profile img-fluid"
+          alt="..."
+        />
+      </div>
+    </div>
+
+    <div class="about d-flex" id="About">
+      <img
+        src="pictures/DSC_7894-removebg-preview (1).png"
+        class="profile img-fluid bg-white"
+        alt="..."
+      />
+      <div>
+        <h1 class="cardTitle"><strong>About Me</strong></h1>
+        <br />
+        <p class="cardText">
+          Halo! Saya Ivan Muliansyah, seorang mahasiswa Teknik Informatika di Universitas Sulawesi Barat yang bersemangat dan bercita-cita tinggi. Saya percaya bahwa teknologi memiliki kekuatan untuk mengubah dunia, dan itulah mengapa saya begitu tertarik dengan dunia Informatika. Selama perjalanan akademik saya, saya telah terlibat dalam proyek dan aktivitas di luar kurikulum. Saya pernah menjadi mahasiswa Intern di salah satu Software House di Kota Makassar yaitu Afila Media Karya, di mana saya belajar banyak tentang kerja sama tim, manajemen proyek, dan pengembangan perangkat lunak. Selain itu, saya juga aktif di Informatics Study Club di kampus saya, dimana saya terlibat dalam membawakan materi tentang UI/UX Design serta menjadi Ketua Tim Creative.
+        </p>
+      </div>
+    </div>
+
+    <div class="experience" id="Experience">
+      <h1 class="text-center"><strong>Experience</strong></h1>
+      <div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="pictures/isc2.png" class="col-sm-5" alt="" />
+                <h5 class="card-title">Informatics Study Club</h5>
+                <p class="card-text">Divisi UI/UX & Ketua Tim Creative</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="pictures/Logo_Gerakan_Nasional_1000_Startup_Digital.png"
+                  class="col-sm-5"
+                  alt=""
+                />
+                <h5 class="card-title">1000 Startup Digital</h5>
+                <p class="card-text">
+                  Volunteer Roadshow Gerakan Nasional 1000 Startup Digital di
+                  Sulawesi Barat
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="pictures/afila_media_karya_logo.jpeg"
+                  class="col-sm-5"
+                  alt=""
+                />
+                <h5 class="card-title">Afila Media Karya</h5>
+                <p class="card-text">UI/UX Design Intern & Scrum Master</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education" id="Education">
+      <h1 class="text-center"><strong>Education</strong></h1>
+      <div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="pictures/images-removebg-preview.png" class="col-sm-5" alt="" />
+                <h5 class="card-title text-white">SMAN 8 Bulukumba</h5>
+                <p class="card-text text-white">2018 - 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="card text-center">
+              <div class="card-body">
+                <img
+                  src="pictures/unsulbar.png"
+                  class="col-sm-5"
+                  alt=""
+                />
+                <h5 class="card-title text-white">Universitas Sulawesi Barat</h5>
+                <p class="card-text text-white">2021 - Sekarang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="Contact">
+      <h1 class="text-center"><strong>Contact</strong></h1>
+      <div>
+        <div class="d-flex justify-content-center align-items-center m-5">
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="card-body">
+                <i class="fa-brands fa-instagram" style="font-size: 40px"></i>
+                <h5 class="card-title">Instagram</h5>
+                <p class="card-text">@ivanmlnsyh_</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-phone" style="font-size: 40px"></i>
+                <h5 class="card-title">Telephone</h5>
+                <p class="card-text">
+                  +62 82347019336
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="text-center">
+              <div class="card-body">
+                <i class="fa-brands fa-whatsapp" style="font-size: 40px"></i>
+                <h5 class="card-title">WhatsApp</h5>
+                <p class="card-text">+62 82347019336</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</html>
